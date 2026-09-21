@@ -1,4 +1,4 @@
-// Drizzle schema for the GT Campus Opportunity Finder.
+// Drizzle schema for BuzzBoard.
 //
 // Postgres (Neon) dialect. Previously targeted SQLite for the overnight
 // build; migrated per the deployment task (see BUILD_NOTES.md). Notes on

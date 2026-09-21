@@ -1,4 +1,4 @@
-# GT Campus Opportunity Finder
+# BuzzBoard
 
 A searchable directory of Georgia Tech student opportunities — VIP (Vertically
 Integrated Projects) teams, research labs, and clubs — in one place, with

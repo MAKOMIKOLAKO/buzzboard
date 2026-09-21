@@ -24,7 +24,7 @@ Idempotent — safe to run anytime; updates existing rows by VIP entry ID, never
 
 ### Windows Task Scheduler
 ```
-schtasks /Create /TN "GT-Opportunity-Finder-VIP-Scrape" /SC MONTHLY /MO FIRST /D SUN /M JAN,AUG ^
+schtasks /Create /TN "BuzzBoard-VIP-Scrape" /SC MONTHLY /MO FIRST /D SUN /M JAN,AUG ^
   /TR "cmd /c cd /d C:\Users\reach\gtopportunities && npm run scrape:vip >> logs\vip-scrape.log 2>&1" /ST 06:00
 ```
 
@@ -55,7 +55,7 @@ without passing through the admin review queue first.
 
 ### Windows Task Scheduler
 ```
-schtasks /Create /TN "GT-Opportunity-Finder-Engage-Pipeline" /SC MONTHLY /D 1 ^
+schtasks /Create /TN "BuzzBoard-Engage-Pipeline" /SC MONTHLY /D 1 ^
   /TR "cmd /c cd /d C:\Users\reach\gtopportunities && npm run scrape:engage && npm run classify:engage >> logs\engage.log 2>&1" /ST 06:00
 ```
 
