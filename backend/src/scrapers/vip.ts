@@ -32,7 +32,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const LISTING_URL = "https://vip.gatech.edu/teams-all-in-one/";
 const USER_AGENT =
-  "GT-Opportunity-Finder-Bot/0.1 (student project; contact: reachmaako@gmail.com)";
+  "BuzzBoard-Bot/0.1 (student project; contact: reachmaako@gmail.com)";
 
 // repo-root/data/raw-cache/vip
 const CACHE_DIR = path.resolve(__dirname, "../../../data/raw-cache/vip");

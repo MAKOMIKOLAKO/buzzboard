@@ -1,4 +1,4 @@
-// GT Campus Opportunity Finder — client-side SPA (directory / detail / submit).
+// BuzzBoard — client-side SPA (directory / detail / submit).
 // All data comes from live fetch() calls against the backend API (see
 // API-CONTRACT.md); there is no local seed/demo data.
 

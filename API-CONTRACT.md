@@ -1,4 +1,4 @@
-# API Contract — GT Campus Opportunity Finder
+# API Contract — BuzzBoard
 
 Backend: Express + TypeScript. All request/response bodies are JSON
 (`Content-Type: application/json`). Base path: `/api`.

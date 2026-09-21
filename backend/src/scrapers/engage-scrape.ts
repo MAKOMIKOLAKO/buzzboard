@@ -49,7 +49,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const RAW_CACHE_DIR = path.resolve(__dirname, "../../../data/raw-cache/engage");
 
 const DIRECTORY_URL = "https://gatech.campuslabs.com/engage/organizations";
-const USER_AGENT = "Mozilla/5.0 (compatible; GTOpportunityFinderBot/1.0; +https://github.com/gt-opportunity-finder; research project, respects robots.txt)";
+const USER_AGENT = "Mozilla/5.0 (compatible; BuzzBoardBot/1.0; +https://github.com/gt-opportunity-finder; research project, respects robots.txt)";
 
 // Between "Load More" clicks — polite pacing, not a workaround for anything.
 const CLICK_DELAY_MS = 1500;

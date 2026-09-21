@@ -137,7 +137,7 @@ function opportunityCardHtml(o: OpportunityDTO): string {
 function siteHeaderHtml(): string {
   return `<header class="ssr-header">
   <nav aria-label="Main">
-    <a href="/" class="ssr-brand">GT Opportunity Finder</a>
+    <a href="/" class="ssr-brand">BuzzBoard</a>
     <a href="/categories/vip">VIP Teams</a>
     <a href="/categories/lab">Research Labs</a>
     <a href="/categories/club">Student Orgs</a>
@@ -147,7 +147,7 @@ function siteHeaderHtml(): string {
 
 function siteFooterHtml(): string {
   return `<footer class="ssr-footer">
-  <p>GT Opportunity Finder is an independent directory of Georgia Tech VIP teams, research labs, and technical student organizations. Not officially affiliated with Georgia Institute of Technology.</p>
+  <p>BuzzBoard is an independent directory of Georgia Tech VIP teams, research labs, and technical student organizations. Not officially affiliated with Georgia Institute of Technology.</p>
 </footer>`;
 }
 
@@ -175,7 +175,7 @@ seoRouter.get("/org/:slug", async (req, res) => {
     res.status(404);
     res.send(
       pageShell({
-        title: "Opportunity not found | GT Opportunity Finder",
+        title: "Opportunity not found | BuzzBoard",
         description: "This listing doesn't exist or is no longer published.",
         canonical: `${origin}/org/${req.params.slug}`,
         jsonLd: [],
@@ -195,7 +195,7 @@ seoRouter.get("/org/:slug", async (req, res) => {
 
   const typeLabel = TYPE_LABEL[opp.type];
   const canonical = `${origin}/org/${opp.slug}`;
-  const title = truncate(`${opp.name} — Georgia Tech ${typeLabel}`, 60) + " | GT Opportunity Finder";
+  const title = truncate(`${opp.name} — Georgia Tech ${typeLabel}`, 60) + " | BuzzBoard";
   const description = truncate(
     opp.description || `${opp.name} is a Georgia Tech ${typeLabel.toLowerCase()}.`,
     157
@@ -418,7 +418,7 @@ seoRouter.get("/categories/:type", async (req, res) => {
   if (!VALID_TYPES.includes(type)) {
     res.status(404).send(
       pageShell({
-        title: "Category not found | GT Opportunity Finder",
+        title: "Category not found | BuzzBoard",
         description: "This category doesn't exist.",
         canonical: `${origin}/categories/${req.params.type}`,
         jsonLd: [],
@@ -430,7 +430,7 @@ seoRouter.get("/categories/:type", async (req, res) => {
 
   const results = await getPublic({ type });
   const canonical = `${origin}/categories/${type}`;
-  const title = `Georgia Tech ${TYPE_PLURAL[type]} — Full List | GT Opportunity Finder`;
+  const title = `Georgia Tech ${TYPE_PLURAL[type]} — Full List | BuzzBoard`;
   const description = truncate(
     `Browse every active Georgia Tech ${TYPE_LABEL[type].toLowerCase()} (${results.length} listed). ${CATEGORY_INTRO[type]}`,
     157
